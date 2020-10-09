@@ -1,0 +1,94 @@
+/* nejsme vcerejsi, pouzivame moderni box model */
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+/*
+ BARVY
+ pozadi     #f5f5f5
+ Jedeme retro cernobile, dnes barvy nepotrebujeme.
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: 'Merriweather', serif;
+  font-size: 16px;
+  line-height: 1.6;
+  width: 460px;
+}
+/*
+Mobilní verze - šířka do 500px
+==============================
+- všechno je pod sebou v jedné úzké nudli
+- v menu jsou položky pod sebou, menu samotné je nad obsahem
+- v galerii jsou všechny obrázky pod sebou
+- popisky k obrázkům jsou vždy pod obrázkem (k těm v textu i k těm v galerii)
+*/
+
+/* HLAVICKA */
+
+.titulek {
+  font-family: 'Raleway', serif;
+  text-align: center;
+  color: white;
+  padding: 20px 20px 0 20px;
+  font-size: 50px;
+  margin: 0;
+}
+.hlavicka {
+  background-image: url('images/island-hlavicka.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+.perex {
+  color: white;
+  padding: 0 40px;
+  text-align: center;
+}
+
+.autor {
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 0px 10px 40px 10px;
+  font-style: italic;
+}
+
+.autor::before {
+  content: '';
+  width: 80px;
+  height: 2px;
+  display: block;
+  margin: 10px auto;
+  background-color: white;
+}
+
+/* MENU */
+
+.menu {
+  list-style-type: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.menu a {
+  text-decoration: none;
+  color: grey;
+  text-transform: uppercase;
+}
+
+li {
+  border-bottom: 1px solid rgb(196, 189, 189);
+  margin: 10px 0;
+}
+
+/* OBSAH */
+
+/* FOTOGALERIE */
+
+/* PATICKA */
